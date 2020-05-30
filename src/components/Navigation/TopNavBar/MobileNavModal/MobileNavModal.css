@@ -1,0 +1,23 @@
+.MobileNavModal {
+    position: fixed;
+    background-color: #111111;
+    border: 1px solid #111111;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.MobileOnlyNavItems {
+    display: flex;
+    margin-top: 100px;
+    padding-left: 30px;
+}
