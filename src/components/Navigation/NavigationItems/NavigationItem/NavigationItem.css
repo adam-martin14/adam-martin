@@ -3,18 +3,36 @@
     font-size: 19px;
 }
 
+@media (min-width: 769px) {
+    .NavigationItem {
+        padding: 25px;
+        font-size: 19px;
+    }
+}
+
 .NavigationItem a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.NavigationItem a:hover {
-    color: #FFFFFF;
-    opacity: 0.8;
-    text-decoration: none;
+@media(min-width: 769px) {
+    .NavigationItem a:hover::after {
+        width: 100%;
+        background-color: #FFFFFF;
+    }
 }
 
-@media(min-width: 540px) {
+@media(min-width: 769px) {
+    .NavigationItem a::after {
+        content: "";
+        display: block;
+        margin: 3px auto 0px;
+        height: 3px;
+        transition: width 0.5s ease, background-color 0.5s ease;
+    }
+}
+
+@media(min-width: 769px) {
     .NavigationItem {
         display: block;
     }

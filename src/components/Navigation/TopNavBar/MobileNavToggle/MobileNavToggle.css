@@ -6,7 +6,7 @@
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
-    padding: 13px 0;
+    padding: 15px 0;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -17,7 +17,7 @@
     background-color: #FFFFFF;
 }
 
-@media (min-width: 541px) {
+@media (min-width: 769px) {
     .MobileNavToggle {
         display: none;
     }

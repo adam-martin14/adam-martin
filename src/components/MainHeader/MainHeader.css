@@ -1,0 +1,104 @@
+.MainHeader {
+    height: 100%;
+    background-color: #000000;
+}
+
+.MainHeader h1, h2, h3 {
+    color: #FFFFFF;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.MainHeader h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.MainHeader h2 {
+    font-size: 32px;
+}
+
+.MainHeader h3 {
+    font-size: 20px;
+}
+
+.MainHeaderContent {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.MainHeaderCTA {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 769px) {
+    .MainHeaderCTA {
+        flex-direction: row;
+    }
+
+    .MainHeaderCTA div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 100px;
+    }
+}
+
+.AdamImage {
+    border: 5px solid #FFFFFF;
+    object-fit: cover;
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media(min-width: 769px) {
+    .AdamImage {
+        width: auto;
+    }
+}
+
+.MainHeaderLocation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.LocationPinImage {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    object-fit: cover;
+}
+
+.HeaderIconStrip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.IconImage {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.MainHeaderContent a {
+    display: inline-block;
+}
+
+.MainHeaderContent a:hover {
+    opacity: 0.8;
+}
+
+

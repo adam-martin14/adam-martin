@@ -1,0 +1,14 @@
+.logo {
+    height: 75%;
+}
+
+.logo a:hover {
+    opacity: 0.9;
+}
+
+.logo img {
+    height: 100%;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;;
+}
+
