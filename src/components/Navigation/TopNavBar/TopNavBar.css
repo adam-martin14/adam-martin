@@ -3,7 +3,7 @@
     height: 75px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
     .TopNavBarContainer {
         height: 80px;
     }
@@ -29,7 +29,7 @@
     margin-left: auto;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
     .TopNavBar {
         justify-content: space-between;
         height: 80px;
@@ -40,7 +40,7 @@
     display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
     .DesktopOnlyNavItems {
         display: block;
         margin: 3px auto 0px;

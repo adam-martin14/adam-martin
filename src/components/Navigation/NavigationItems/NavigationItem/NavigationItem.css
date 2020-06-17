@@ -3,7 +3,7 @@
     font-size: 19px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
     .NavigationItem {
         padding: 25px;
         font-size: 19px;
@@ -15,14 +15,14 @@
     text-decoration: none;
 }
 
-@media(min-width: 769px) {
+@media(min-width: 992px) {
     .NavigationItem a:hover::after {
         width: 100%;
         background-color: #FFFFFF;
     }
 }
 
-@media(min-width: 769px) {
+@media(min-width: 992px) {
     .NavigationItem a::after {
         content: "";
         display: block;
@@ -32,7 +32,7 @@
     }
 }
 
-@media(min-width: 769px) {
+@media(min-width: 992px) {
     .NavigationItem {
         display: block;
     }

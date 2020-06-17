@@ -1,0 +1,168 @@
+.HeaderContainer {
+    height: 100%;
+    background-color: #000000;
+
+    .HeaderContentContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 50px;
+        margin-left: 16px;
+        margin-right: 16px;
+
+        @media (min-width: 992px) {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media(min-width: 1440px) {
+            width: 1440px;
+            margin: auto;
+        }
+
+        @media(min-width: 1920px) {
+            width: 1600px;
+            margin: auto;
+        }
+
+        h1, h2, h3 {
+            color: #FFFFFF;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        h1 {
+            font-size: 38px;
+            margin-bottom: 20px;
+    
+            @media (min-width: 992px) {
+                font-size: 42px;
+            }
+
+            @media (min-width: 1920px) {
+                font-size: 60px;
+            }
+        }
+    
+        h2 {
+            font-size: 32px; 
+            
+            @media (min-width: 992px) {
+                font-size: 38px;
+            }
+
+            @media (min-width: 1920px) {
+                font-size: 50px;
+            }
+        }
+    
+        h3 {
+            font-size: 20px;
+
+            @media (min-width: 1920px) {
+                font-size: 30px;
+            }
+        }
+
+        a {
+            display: inline-block;
+        
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .LocationPinImage {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            object-fit: cover;
+        }
+
+        .IconImage {
+            object-fit: cover;
+            width: 40px;
+            height: 40px;
+            margin-top: 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .MobileHeaderIntroContainer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .MobileHeaderIntroContainer, .MobileHeaderLocationContainer, .MobileHeaderIconStrip {
+            @media(min-width: 992px) {
+                display: none;    
+            }
+        }
+    
+        .HeaderImageContainer {
+            margin: auto;
+    
+            @media(min-width: 992px) {
+                width: 50%;
+                margin-top: 0;
+                margin-bottom: 0;
+                order: 3;
+            }
+    
+            @media(min-width: 541px) and (max-width: 991px) {
+                width: 60%;
+            }
+
+            .AdamImage {
+                border: 5px solid #FFFFFF;
+                object-fit: cover;
+                margin: auto;
+                width: 80%;
+                margin-top: 30px;
+                margin-bottom:30px;
+
+                @media(min-width: 992px) {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    max-width: 400px;
+                }
+                
+                @media(min-width: 1920px) {
+                    max-width: 600px;
+                }
+            }
+        }
+
+        .DesktopHeaderIntroContainer {
+            justify-content: center;
+            margin-bottom: 35px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    
+        .DesktopHeaderIntroLocationIconsContainer {
+            display: none;
+    
+            @media(min-width: 992px) {
+                display: block;
+                width: 50%;
+                padding-top: 50px;
+            }
+
+            @media(min-width: 1920px) {
+                padding-top: 150px;
+            }
+        }
+    
+        .DesktopLocationIconsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .DesktopHeaderLocationContainer {
+            margin-bottom: 10px;
+        }
+    }
+}

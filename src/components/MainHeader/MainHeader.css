@@ -1,104 +1,167 @@
-.MainHeader {
-    height: 100%;
-    background-color: #000000;
+.HeaderContainer {
+  height: 100%;
+  background-color: #000000;
 }
-
-.MainHeader h1, h2, h3 {
-    color: #FFFFFF;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+.HeaderContainer .HeaderContentContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
-
-.MainHeader h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
-
-.MainHeader h2 {
-    font-size: 32px;
-}
-
-.MainHeader h3 {
-    font-size: 20px;
-}
-
-.MainHeaderContent {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 50px;
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-.MainHeaderCTA {
+@media (min-width: 992px) {
+  .HeaderContainer .HeaderContentContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
 }
-
-@media (min-width: 769px) {
-    .MainHeaderCTA {
-        flex-direction: row;
-    }
-
-    .MainHeaderCTA div {
-        display: flex;
-        flex-direction: column;
-        margin-left: 30px;
-        margin-top: 100px;
-    }
-}
-
-.AdamImage {
-    border: 5px solid #FFFFFF;
-    object-fit: cover;
+@media (min-width: 1440px) {
+  .HeaderContainer .HeaderContentContainer {
+    width: 1440px;
     margin: auto;
-    width: 80%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1920px) {
+  .HeaderContainer .HeaderContentContainer {
+    width: 1600px;
+    margin: auto;
+  }
+}
+.HeaderContainer .HeaderContentContainer h1, .HeaderContainer .HeaderContentContainer h2, .HeaderContainer .HeaderContentContainer h3 {
+  color: #FFFFFF;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.HeaderContainer .HeaderContentContainer h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .HeaderContainer .HeaderContentContainer h1 {
+    font-size: 42px;
+  }
+}
+@media (min-width: 1920px) {
+  .HeaderContainer .HeaderContentContainer h1 {
+    font-size: 60px;
+  }
+}
+.HeaderContainer .HeaderContentContainer h2 {
+  font-size: 32px;
+}
+@media (min-width: 992px) {
+  .HeaderContainer .HeaderContentContainer h2 {
+    font-size: 38px;
+  }
+}
+@media (min-width: 1920px) {
+  .HeaderContainer .HeaderContentContainer h2 {
+    font-size: 50px;
+  }
+}
+.HeaderContainer .HeaderContentContainer h3 {
+  font-size: 20px;
+}
+@media (min-width: 1920px) {
+  .HeaderContainer .HeaderContentContainer h3 {
+    font-size: 30px;
+  }
+}
+.HeaderContainer .HeaderContentContainer a {
+  display: inline-block;
+}
+.HeaderContainer .HeaderContentContainer a:hover {
+  opacity: 0.8;
+}
+.HeaderContainer .HeaderContentContainer .LocationPinImage {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  object-fit: cover;
+}
+.HeaderContainer .HeaderContentContainer .IconImage {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.HeaderContainer .HeaderContentContainer .MobileHeaderIntroContainer {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .HeaderContainer .HeaderContentContainer .MobileHeaderIntroContainer, .HeaderContainer .HeaderContentContainer .MobileHeaderLocationContainer, .HeaderContainer .HeaderContentContainer .MobileHeaderIconStrip {
+    display: none;
+  }
+}
+.HeaderContainer .HeaderContentContainer .HeaderImageContainer {
+  margin: auto;
+}
+@media (min-width: 992px) {
+  .HeaderContainer .HeaderContentContainer .HeaderImageContainer {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    order: 3;
+  }
+}
+@media (min-width: 541px) and (max-width: 991px) {
+  .HeaderContainer .HeaderContentContainer .HeaderImageContainer {
+    width: 60%;
+  }
+}
+.HeaderContainer .HeaderContentContainer .HeaderImageContainer .AdamImage {
+  border: 5px solid #FFFFFF;
+  object-fit: cover;
+  margin: auto;
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .HeaderContainer .HeaderContentContainer .HeaderImageContainer .AdamImage {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1920px) {
+  .HeaderContainer .HeaderContentContainer .HeaderImageContainer .AdamImage {
+    max-width: 600px;
+  }
+}
+.HeaderContainer .HeaderContentContainer .DesktopHeaderIntroContainer {
+  justify-content: center;
+  margin-bottom: 35px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.HeaderContainer .HeaderContentContainer .DesktopHeaderIntroLocationIconsContainer {
+  display: none;
+}
+@media (min-width: 992px) {
+  .HeaderContainer .HeaderContentContainer .DesktopHeaderIntroLocationIconsContainer {
+    display: block;
+    width: 50%;
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1920px) {
+  .HeaderContainer .HeaderContentContainer .DesktopHeaderIntroLocationIconsContainer {
+    padding-top: 150px;
+  }
+}
+.HeaderContainer .HeaderContentContainer .DesktopLocationIconsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.HeaderContainer .HeaderContentContainer .DesktopHeaderLocationContainer {
+  margin-bottom: 10px;
 }
 
-@media(min-width: 769px) {
-    .AdamImage {
-        width: auto;
-    }
-}
-
-.MainHeaderLocation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.LocationPinImage {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-    object-fit: cover;
-}
-
-.HeaderIconStrip {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.IconImage {
-    object-fit: cover;
-    width: 40px;
-    height: 40px;
-    margin-top: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.MainHeaderContent a {
-    display: inline-block;
-}
-
-.MainHeaderContent a:hover {
-    opacity: 0.8;
-}
-
-
+/*# sourceMappingURL=MainHeader.css.map */
