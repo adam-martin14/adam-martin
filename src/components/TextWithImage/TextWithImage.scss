@@ -1,0 +1,29 @@
+.TextWithImageContainer {
+    background-color: #E8E8E8;
+    padding: 30px;
+
+    h1 {
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .TextWithImageContentContainer {
+        display: flex;
+        flex-direction: column;
+
+        @media(min-width: 992px) {
+            flex-direction: row;
+        }
+    
+        .ImageColumn {
+            text-align: center;
+        }
+    
+        .TextColumn, .ImageColumn {
+    
+            @media(min-width: 992px) {
+                width: 50%;
+            }         
+        }
+    }
+}
