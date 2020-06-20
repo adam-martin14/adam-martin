@@ -1,0 +1,56 @@
+.CardGridContainer {
+  background-color: #E8E8E8;
+  padding: 30px 50px;
+}
+.CardGridContainer h1 {
+  text-align: center;
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+}
+.CardGridContainer .CardGridContentContainer {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .CardGridContainer .CardGridContentContainer {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1440px) {
+  .CardGridContainer .CardGridContentContainer {
+    width: 1440px;
+    margin: auto;
+  }
+}
+@media (min-width: 1920px) {
+  .CardGridContainer .CardGridContentContainer {
+    width: 1600px;
+    margin: auto;
+  }
+}
+.CardGridContainer .CardGridContentContainer .Card {
+  background-color: #FFFFFF;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .CardGridContainer .CardGridContentContainer .Card {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .CardGridContainer .CardGridContentContainer .Card:last-child {
+    margin-right: 0;
+  }
+}
+.CardGridContainer .CardGridContentContainer .Card:last-child {
+  margin-bottom: 0;
+}
+.CardGridContainer .CardGridContentContainer .Card h3 {
+  text-align: center;
+}
+.CardGridContainer .CardGridContentContainer .Card p {
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=CardGrid.css.map */
