@@ -1,6 +1,6 @@
 .TextWithImageContainer {
     background-color: #E8E8E8;
-    padding: 30px 50px;
+    padding: 30px 50px 15px 50px;
 
     h1 {
         text-align: center;
@@ -11,12 +11,12 @@
     }
     
     .TextWithImageContentContainer {
-        display: flex;
-        flex-direction: column-reverse;
+        // display: flex;
+        // flex-direction: column-reverse;
 
-        @media(min-width: 992px) {
-            flex-direction: row;
-        }
+        // @media(min-width: 992px) {
+        //     flex-direction: row;
+        // }
 
         @media(min-width: 1440px) {
             width: 1440px;
@@ -30,26 +30,33 @@
 
         .TextColumn {
 
+            margin-left: auto;
+            margin-right: auto;
+
+            @media(min-width: 992px) {
+                width: 80%;
+            }
+
             p {
                 line-height: 30px;
             }
         }
     
-        .ImageColumn {
-            text-align: center;
+        // .ImageColumn {
+        //     text-align: center;
 
-            margin-bottom: 20px;
+        //     margin-bottom: 20px;
 
-            @media(min-width: 992px) {
-                margin-bottom: 0px;
-            }
-        }
+        //     @media(min-width: 992px) {
+        //         margin-bottom: 0px;
+        //     }
+        // }
     
-        .TextColumn, .ImageColumn {
+        // .TextColumn, .ImageColumn {
     
-            @media(min-width: 992px) {
-                width: 50%;
-            }         
-        }
+        //     @media(min-width: 992px) {
+        //         width: 50%;
+        //     }         
+        // }
     }
 }

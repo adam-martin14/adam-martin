@@ -14,9 +14,9 @@ const textWithImage = (props) => (
                 <p>{props.text}</p>
             </div>
 
-            <div className={classes.ImageColumn}>
+            {/* <div className={classes.ImageColumn}>
                 <img src={props.imageSource}></img>
-            </div>
+            </div> */}
 
         </div>
 

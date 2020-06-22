@@ -2,11 +2,65 @@
   background-color: #E8E8E8;
   padding: 30px 50px;
 }
-.CarouselContainer h1 {
+.CarouselContainer .CarouselContentContainer {
+  text-align: center;
+}
+@media (min-width: 1440px) {
+  .CarouselContainer .CarouselContentContainer {
+    width: 1440px;
+    margin: auto;
+  }
+}
+@media (min-width: 1920px) {
+  .CarouselContainer .CarouselContentContainer {
+    width: 1600px;
+    margin: auto;
+  }
+}
+.CarouselContainer .CarouselContentContainer h1 {
   text-align: center;
   margin-top: 0;
   font-family: "Roboto", sans-serif;
   font-size: 38px;
+}
+.CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+@media (min-width: 992px) {
+  .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer {
+    padding: 30px;
+  }
+}
+.CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+@media (min-width: 992px) {
+  .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer img {
+    width: 80%;
+  }
+}
+.CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer p {
+  line-height: 30px;
+  text-align: left;
+}
+@media (min-width: 992px) {
+  .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.CarouselContainer .previousArrow, .CarouselContainer .nextArrow {
+  width: 30px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=Carousel.css.map */

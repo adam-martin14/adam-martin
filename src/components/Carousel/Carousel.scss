@@ -2,10 +2,67 @@
     background-color: #E8E8E8;
     padding: 30px 50px;
 
-    h1 {
+    .CarouselContentContainer {
         text-align: center;
-        margin-top: 0;
-        font-family: 'Roboto', sans-serif;
-        font-size: 38px;
+    
+        @media(min-width: 1440px) {
+            width: 1440px;
+            margin: auto;
+        }
+    
+        @media(min-width: 1920px) {
+            width: 1600px;
+            margin: auto;
+        }
+    
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 38px;
+        }
+    
+        .CarouselSlideContentContainer {
+            margin-right: 15px;
+            margin-left: 15px;
+    
+            @media(min-width: 992px) {
+                padding: 30px;
+            }
+    
+            h2 {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+    
+            img {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+                max-width: 450px;
+                //border: 5px solid #FFFFFF;
+    
+                @media(min-width: 992px) {
+                    width: 80%;
+                }
+            }
+    
+            p {
+                line-height: 30px;
+                text-align: left;
+    
+                @media(min-width: 992px) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+    .previousArrow, .nextArrow {
+        width: 30px;
+        height: 30px;
     }
 }
+

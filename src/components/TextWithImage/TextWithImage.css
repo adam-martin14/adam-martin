@@ -1,21 +1,12 @@
 .TextWithImageContainer {
   background-color: #E8E8E8;
-  padding: 30px 50px;
+  padding: 30px 50px 15px 50px;
 }
 .TextWithImageContainer h1 {
   text-align: center;
   margin-top: 0;
   font-family: "Roboto", sans-serif;
   font-size: 38px;
-}
-.TextWithImageContainer .TextWithImageContentContainer {
-  display: flex;
-  flex-direction: column-reverse;
-}
-@media (min-width: 992px) {
-  .TextWithImageContainer .TextWithImageContentContainer {
-    flex-direction: row;
-  }
 }
 @media (min-width: 1440px) {
   .TextWithImageContainer .TextWithImageContentContainer {
@@ -29,22 +20,17 @@
     margin: auto;
   }
 }
+.TextWithImageContainer .TextWithImageContentContainer .TextColumn {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .TextWithImageContainer .TextWithImageContentContainer .TextColumn {
+    width: 80%;
+  }
+}
 .TextWithImageContainer .TextWithImageContentContainer .TextColumn p {
   line-height: 30px;
-}
-.TextWithImageContainer .TextWithImageContentContainer .ImageColumn {
-  text-align: center;
-  margin-bottom: 20px;
-}
-@media (min-width: 992px) {
-  .TextWithImageContainer .TextWithImageContentContainer .ImageColumn {
-    margin-bottom: 0px;
-  }
-}
-@media (min-width: 992px) {
-  .TextWithImageContainer .TextWithImageContentContainer .TextColumn, .TextWithImageContainer .TextWithImageContentContainer .ImageColumn {
-    width: 50%;
-  }
 }
 
 /*# sourceMappingURL=TextWithImage.css.map */
