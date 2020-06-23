@@ -1,0 +1,75 @@
+.ContactBlockContainer {
+    background-color: #E8E8E8;
+    padding: 45px 50px 30px 50px;  
+    
+    h1 {
+        text-align: center;
+        margin-top: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 38px;
+    }
+
+    .ContactBlockContentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .IconAndText {
+            margin-bottom: 20px;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                color: #000000;
+                text-decoration: none;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                @media(min-width: 992px) {
+                    flex-direction: row;
+                }
+
+                img {
+                    width: 40px;
+                    margin: auto;
+    
+                    @media(min-width: 992px) {
+                        width: 50px;
+                        margin-right: 20px;
+                    }
+                }
+    
+                p {
+                    font-size: 18px;
+    
+                    @media(min-width: 992px) {
+                        font-size: 20px;
+                    }
+                }
+            }         
+        }
+
+        .Icon {
+
+            a {
+                display: inline-block;
+            
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                .LinkedinIcon {
+                    width: 40px;
+                    height: 40px;
+        
+                    @media(min-width: 992px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }     
+    }
+}
