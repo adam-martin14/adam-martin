@@ -5,6 +5,7 @@ import TextWithImage from './components/TextWithImage/TextWithImage';
 import CardGrid from './components/CardGrid/CardGrid';
 import Carousel from './components/Carousel/Carousel';
 import ContactBlock from './components/ContactBlock/ContactBlock';
+import Footer from './components/Footer/Footer';
 
 
 class App extends Component {
@@ -16,7 +17,6 @@ class App extends Component {
       <div className="App">
 
         <NavigationContainer />
-
         <MainHeader />
 
         <TextWithImage 
@@ -24,13 +24,11 @@ class App extends Component {
         />
 
         <CardGrid />
-
         <Carousel />
-
         <ContactBlock />
+        <Footer />
 
       </div>
-
     );
   }
 }

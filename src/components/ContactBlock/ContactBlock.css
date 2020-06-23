@@ -1,6 +1,6 @@
 .ContactBlockContainer {
   background-color: #E8E8E8;
-  padding: 45px 50px 30px 50px;
+  padding: 45px 50px 40px 50px;
 }
 .ContactBlockContainer h1 {
   text-align: center;
@@ -36,17 +36,12 @@
 }
 @media (min-width: 992px) {
   .ContactBlockContainer .ContactBlockContentContainer .IconAndText a img {
-    width: 50px;
+    width: 45px;
     margin-right: 20px;
   }
 }
 .ContactBlockContainer .ContactBlockContentContainer .IconAndText a p {
   font-size: 18px;
-}
-@media (min-width: 992px) {
-  .ContactBlockContainer .ContactBlockContentContainer .IconAndText a p {
-    font-size: 20px;
-  }
 }
 .ContactBlockContainer .ContactBlockContentContainer .Icon a {
   display: inline-block;
@@ -60,8 +55,8 @@
 }
 @media (min-width: 992px) {
   .ContactBlockContainer .ContactBlockContentContainer .Icon a .LinkedinIcon {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
 }
 

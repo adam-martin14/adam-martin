@@ -178,13 +178,18 @@
             margin-bottom: 10px;
 
             @media(min-width: 992px) {
-                font-size: 23px;
+                font-size: 21px;
             }
         }
     
         img {
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
+
+            @media(min-width: 992px) {
+                width: 40px;
+                height: 40px;
+            }
         }
     }
 }
