@@ -2,12 +2,6 @@
   background-color: #E8E8E8;
   padding: 30px 50px;
 }
-.CardGridContainer h1 {
-  text-align: center;
-  margin-top: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 38px;
-}
 .CardGridContainer .CardGridContentContainer {
   display: flex;
   flex-direction: column;
@@ -46,7 +40,7 @@
 .CardGridContainer .CardGridContentContainer .Card:last-child {
   margin-bottom: 0;
 }
-.CardGridContainer .CardGridContentContainer .Card h3 {
+.CardGridContainer .CardGridContentContainer .Card h2 {
   text-align: center;
 }
 .CardGridContainer .CardGridContentContainer .Card p {

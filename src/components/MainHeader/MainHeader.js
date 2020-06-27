@@ -6,6 +6,7 @@ import codepenLogo from '../../assets/icons/codepen-logo.png';
 import locationPin from '../../assets/icons/location-pin.png';
 import downArrow from '../../assets/icons/down-arrow.png';
 
+
 const mainHeader = (props) => (
 
     <div className={classes.HeaderContainer}>
@@ -69,7 +70,10 @@ const mainHeader = (props) => (
 
         <div className={classes.HeaderDownArrowContainer}>
             <p>What can I do?</p>
-            <img src={downArrow}></img>
+
+            <a href="#skills">
+                <img src={downArrow}></img>
+            </a>
         </div>
 
     </div>

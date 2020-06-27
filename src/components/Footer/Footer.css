@@ -14,18 +14,6 @@
 .FooterContainer .FooterContentContainer {
   text-align: center;
 }
-@media (min-width: 1440px) {
-  .FooterContainer .FooterContentContainer {
-    width: 1440px;
-    margin: auto;
-  }
-}
-@media (min-width: 1920px) {
-  .FooterContainer .FooterContentContainer {
-    width: 1600px;
-    margin: auto;
-  }
-}
 .FooterContainer .FooterContentContainer p {
   color: #FFFFFF;
   margin: 0;

@@ -3,29 +3,35 @@ import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import MobileNavToggle from './MobileNavToggle/MobileNavToggle';
 import classes from './TopNavBar.css';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 const topNavBar = (props) => {
 
     return (
 
-        <div className={classes.TopNavBarContainer}>
+        <ScrollableAnchor id={'home'}>
 
-            <header className={classes.TopNavBar}>
+            <div className={classes.TopNavBarContainer}>
 
-                <Logo />
+                <header className={classes.TopNavBar}>
 
-                <nav className={classes.DesktopOnlyNavItems}>
-                    <NavigationItems />
-                </nav>
+                    <Logo />
 
-                <MobileNavToggle 
-                    clicked={props.hamburgerIconClicked} 
-                />
-                                    
-            </header>     
-    
-        </div>
+                    <nav className={classes.DesktopOnlyNavItems}>
+                        <NavigationItems />
+                    </nav>
+
+                    <MobileNavToggle 
+                        clicked={props.hamburgerIconClicked} 
+                    />
+                                        
+                </header>     
+        
+            </div>
+
+        </ScrollableAnchor>
+
     )
 };
 

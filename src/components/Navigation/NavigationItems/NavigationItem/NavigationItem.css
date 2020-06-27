@@ -20,6 +20,11 @@
         width: 100%;
         background-color: #FFFFFF;
     }
+
+    .NavigationItem a:focus::after {
+        width: 100%;
+        background-color: #FFFFFF;    
+    }
 }
 
 @media(min-width: 992px) {

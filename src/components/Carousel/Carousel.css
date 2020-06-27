@@ -17,15 +17,8 @@
     margin: auto;
   }
 }
-.CarouselContainer .CarouselContentContainer h1 {
-  text-align: center;
-  margin-top: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 38px;
-}
 .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: 0 15px;
 }
 @media (min-width: 992px) {
   .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer {
@@ -33,15 +26,15 @@
   }
 }
 .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 0 25px;
 }
 .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer img {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   max-width: 450px;
+}
+.CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer img:hover {
+  opacity: 0.9;
 }
 @media (min-width: 992px) {
   .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer img {
@@ -54,13 +47,8 @@
 }
 @media (min-width: 992px) {
   .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer p {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
   }
-}
-.CarouselContainer .previousArrow, .CarouselContainer .nextArrow {
-  width: 30px;
-  height: 30px;
 }
 
 /*# sourceMappingURL=Carousel.css.map */

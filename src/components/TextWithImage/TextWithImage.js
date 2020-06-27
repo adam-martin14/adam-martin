@@ -1,26 +1,32 @@
 import React from 'react';
 import classes from './TextWithImage.css';
+import PrimarySectionHeading from '../PrimarySectionHeading/PrimarySectionHeading';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 const textWithImage = (props) => (
 
-    <div className={classes.TextWithImageContainer}>
+    <ScrollableAnchor id={'about'}>
 
-        <h1>About Me</h1>
+        <div className={classes.TextWithImageContainer}>
 
-        <div className={classes.TextWithImageContentContainer}>
+            <PrimarySectionHeading primaryHeadingText="About Me" />
 
-            <div className={classes.TextColumn}>
-                <p>{props.text}</p>
+            <div className={classes.TextWithImageContentContainer}>
+
+                <div className={classes.TextColumn}>
+                    <p>{props.text}</p>
+                </div>
+
+                {/* <div className={classes.ImageColumn}>
+                    <img src={props.imageSource}></img>
+                </div> */}
+
             </div>
-
-            {/* <div className={classes.ImageColumn}>
-                <img src={props.imageSource}></img>
-            </div> */}
 
         </div>
 
-    </div>
+    </ScrollableAnchor>
 
 );
 

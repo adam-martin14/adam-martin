@@ -2,12 +2,6 @@
   background-color: #E8E8E8;
   padding: 45px 50px 40px 50px;
 }
-.ContactBlockContainer h1 {
-  text-align: center;
-  margin-top: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 38px;
-}
 .ContactBlockContainer .ContactBlockContentContainer {
   display: flex;
   flex-direction: column;
@@ -15,6 +9,11 @@
 }
 .ContactBlockContainer .ContactBlockContentContainer .IconAndText {
   margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .ContactBlockContainer .ContactBlockContentContainer .IconAndText {
+    margin-bottom: 37px;
+  }
 }
 .ContactBlockContainer .ContactBlockContentContainer .IconAndText a {
   display: flex;
@@ -40,24 +39,38 @@
     margin-right: 20px;
   }
 }
-.ContactBlockContainer .ContactBlockContentContainer .IconAndText a p {
-  font-size: 18px;
-}
-.ContactBlockContainer .ContactBlockContentContainer .Icon a {
-  display: inline-block;
-}
-.ContactBlockContainer .ContactBlockContentContainer .Icon a:hover {
-  opacity: 0.8;
-}
-.ContactBlockContainer .ContactBlockContentContainer .Icon a .LinkedinIcon {
+.ContactBlockContainer .ContactBlockContentContainer .IconAndText a .LinkedinIcon {
   width: 40px;
   height: 40px;
 }
 @media (min-width: 992px) {
-  .ContactBlockContainer .ContactBlockContentContainer .Icon a .LinkedinIcon {
+  .ContactBlockContainer .ContactBlockContentContainer .IconAndText a .LinkedinIcon {
     width: 45px;
     height: 45px;
   }
+}
+.ContactBlockContainer .ContactBlockContentContainer .IconAndText a p {
+  font-size: 18px;
+}
+.ContactBlockContainer .ContactBlockContentContainer .ContactBlockLocationContainer {
+  display: flex;
+  flex-direction: column;
+}
+.ContactBlockContainer .ContactBlockContentContainer .ContactBlockLocationContainer .ContactBlockLocationPinImage {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  object-fit: cover;
+}
+.ContactBlockContainer .ContactBlockContentContainer .ContactBlockLocationContainer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+.ContactBlockContainer .ContactBlockContentContainer .ContactBlockLocationContainer p {
+  font-size: 18px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=ContactBlock.css.map */

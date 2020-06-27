@@ -1,14 +1,6 @@
 .TextWithImageContainer {
     background-color: #E8E8E8;
     padding: 30px 50px 15px 50px;
-
-    h1 {
-        text-align: center;
-        margin-top: 0;
-        font-family: 'Roboto', sans-serif;
-        font-size: 38px;
-
-    }
     
     .TextWithImageContentContainer {
         // display: flex;
@@ -30,8 +22,7 @@
 
         .TextColumn {
 
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
 
             @media(min-width: 992px) {
                 width: 80%;

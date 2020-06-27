@@ -18,6 +18,16 @@
 
 .MobileOnlyNavItems {
     display: flex;
+    justify-content: center;
     margin-top: 100px;
-    padding-left: 30px;
+}
+
+.MobileOnlyNavItems li {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.MobileOnlyNavItems ul {
+    margin-top: 15px;
+    text-align: center;
 }

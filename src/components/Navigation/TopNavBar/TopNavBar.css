@@ -25,6 +25,12 @@
     margin-left: 15px;
 }
 
+@media (min-width: 992px) {
+    .TopNavBar>*:first-child {
+        margin-left: 20px;
+    }
+}
+
 .TopNavBar>*:last-child {
     margin-left: auto;
 }

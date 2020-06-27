@@ -13,21 +13,10 @@
     .FooterContentContainer {
         text-align: center;
     
-        @media(min-width: 1440px) {
-            width: 1440px;
-            margin: auto;
-        }
-    
-        @media(min-width: 1920px) {
-            width: 1600px;
-            margin: auto;
-        }
-
         p {
             color: #FFFFFF;
             margin: 0;
             font-size: 15px;
         }
-    
     }
 }
