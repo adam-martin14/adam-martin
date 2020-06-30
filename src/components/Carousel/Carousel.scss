@@ -31,12 +31,12 @@
                 margin: 0 auto 30px;
                 max-width: 450px;
 
-                &:hover {
-                    opacity: 0.9;
-                }
-    
                 @media(min-width: 992px) {
                     width: 80%;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
                 }
             }
     

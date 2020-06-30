@@ -1,5 +1,4 @@
 .HeaderContainer {
-  height: auto;
   background-color: #000000;
   padding-bottom: 35px;
 }
@@ -71,8 +70,10 @@
 .HeaderContainer .HeaderContentContainer a {
   display: inline-block;
 }
-.HeaderContainer .HeaderContentContainer a:hover {
-  opacity: 0.8;
+@media (min-width: 992px) {
+  .HeaderContainer .HeaderContentContainer a:hover {
+    opacity: 0.8;
+  }
 }
 .HeaderContainer .HeaderContentContainer .LocationPinImage {
   width: 30px;
@@ -88,6 +89,14 @@
 .HeaderContainer .HeaderContentContainer .MobileHeaderIntroContainer {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 321px) and (max-width: 991px) {
+  .HeaderContainer .HeaderContentContainer .MobileHeaderIntroContainer {
+    margin: 0px 20px 0px 20px;
+  }
+}
+.HeaderContainer .HeaderContentContainer .MobileHeaderLocationContainer {
+  margin-bottom: 10px;
 }
 @media (min-width: 992px) {
   .HeaderContainer .HeaderContentContainer .MobileHeaderIntroContainer, .HeaderContainer .HeaderContentContainer .MobileHeaderLocationContainer, .HeaderContainer .HeaderContentContainer .MobileHeaderIconStrip {
@@ -176,13 +185,14 @@
   width: 35px;
   height: 35px;
 }
-.HeaderContainer .HeaderDownArrowContainer img:hover {
-  opacity: 0.8;
-}
 @media (min-width: 992px) {
   .HeaderContainer .HeaderDownArrowContainer img {
     width: 40px;
     height: 40px;
+    cursor: pointer;
+  }
+  .HeaderContainer .HeaderDownArrowContainer img:hover {
+    opacity: 0.8;
   }
 }
 

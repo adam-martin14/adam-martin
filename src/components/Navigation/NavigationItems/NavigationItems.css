@@ -15,3 +15,44 @@
     }
 }
 
+.NavigationItem {
+    padding: 18px;
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: center;
+}
+
+.NavigationItem:focus {
+    outline: none;
+}
+
+@media (min-width: 992px) {
+    .NavigationItem {
+        padding: 25px;
+        font-size: 19px;
+        cursor: pointer;
+    }
+}
+
+@media(min-width: 992px) {
+    .NavigationItem::after {
+        content: "";
+        display: block;
+        margin: 3px auto 0px;
+        height: 3px;
+        transition: width 0.5s ease, background-color 0.5s ease;
+    }
+}
+
+@media(min-width: 992px) {
+    .NavigationItem:hover::after {
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    .NavigationItem:focus::after {
+        width: 100%;
+        background-color: #FFFFFF;    
+    }
+}
+

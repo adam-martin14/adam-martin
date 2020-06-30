@@ -20,12 +20,12 @@
                 color: #000000;
                 text-decoration: none;
 
-                &:hover {
-                    opacity: 0.8;
-                }
-
                 @media(min-width: 992px) {
                     flex-direction: row;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
                 }
 
                 img {
@@ -34,6 +34,7 @@
     
                     @media(min-width: 992px) {
                         width: 45px;
+                        height: 45px;
                         margin-right: 20px;
                     }
                 }

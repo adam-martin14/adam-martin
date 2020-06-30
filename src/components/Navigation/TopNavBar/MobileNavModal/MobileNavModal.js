@@ -5,22 +5,14 @@ import NavigationItems from '../../NavigationItems/NavigationItems';
 
 const mobileNavModal = (props) => {
 
-    let attachedClasses = [classes.MobileNavModal];
-
-    if (props.open) {
-        attachedClasses = [classes.MobileNavModal, classes.Open];
-    }
-
     return(
-        <div className={attachedClasses.join(' ')}>
 
+        <div className={classes.MobileNavModal}>
             <nav className={classes.MobileOnlyNavItems}>
                 <NavigationItems />
-            </nav>
-            
+            </nav>   
         </div>
     );
-
 }
 
 export default mobileNavModal;

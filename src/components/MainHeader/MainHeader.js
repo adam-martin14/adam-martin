@@ -5,6 +5,7 @@ import linkedinLogo from '../../assets/icons/linkedin-logo.jpg';
 import codepenLogo from '../../assets/icons/codepen-logo.png';
 import locationPin from '../../assets/icons/location-pin.png';
 import downArrow from '../../assets/icons/down-arrow.png';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 
 const mainHeader = (props) => (
@@ -71,9 +72,9 @@ const mainHeader = (props) => (
         <div className={classes.HeaderDownArrowContainer}>
             <p>What can I do?</p>
 
-            <a href="#skills">
+            <Link to="skills" offset={-75} smooth={true} duration={500}>
                 <img src={downArrow}></img>
-            </a>
+            </Link>
         </div>
 
     </div>

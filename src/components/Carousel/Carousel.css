@@ -33,12 +33,12 @@
   margin: 0 auto 30px;
   max-width: 450px;
 }
-.CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer img:hover {
-  opacity: 0.9;
-}
 @media (min-width: 992px) {
   .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer img {
     width: 80%;
+  }
+  .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer img:hover {
+    opacity: 0.9;
   }
 }
 .CarouselContainer .CarouselContentContainer .CarouselSlideContentContainer p {

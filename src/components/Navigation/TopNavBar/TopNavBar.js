@@ -1,18 +1,29 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import MobileNavToggle from './MobileNavToggle/MobileNavToggle';
 import classes from './TopNavBar.css';
-import ScrollableAnchor from 'react-scrollable-anchor'
 
 
-const topNavBar = (props) => {
+class TopNavBar extends Component {
 
-    return (
+    toggleMobileNavModalHandler = () => {
 
-        <ScrollableAnchor id={'home'}>
+        var mobileNavModal = document.getElementsByClassName('MobileNavModal__MobileNavModal__3oAvG')[0];
 
-            <div className={classes.TopNavBarContainer}>
+        if (mobileNavModal.classList.contains('MobileNavModal__Open__hvyCb')) {
+            mobileNavModal.classList.remove('MobileNavModal__Open__hvyCb');
+            
+        } else {
+            mobileNavModal.classList.add('MobileNavModal__Open__hvyCb');
+        }
+    }
+
+    render() {
+
+        return (
+
+            <div id="top-nav-bar" className={classes.TopNavBarContainer}>
 
                 <header className={classes.TopNavBar}>
 
@@ -23,17 +34,16 @@ const topNavBar = (props) => {
                     </nav>
 
                     <MobileNavToggle 
-                        clicked={props.hamburgerIconClicked} 
+                        clicked={this.toggleMobileNavModalHandler} 
                     />
                                         
                 </header>     
         
             </div>
 
-        </ScrollableAnchor>
-
-    )
+        )
+    }   
 };
 
 
-export default topNavBar;
+export default TopNavBar;

@@ -2,9 +2,12 @@
     height: 75%;
 }
 
-.logo a:hover {
-    opacity: 0.9;
+@media(min-width: 992px) {
+    .logo a:hover {
+        opacity: 0.9;
+    }
 }
+
 
 .logo img {
     height: 95%;

@@ -1,5 +1,4 @@
 .HeaderContainer {
-    height: auto;
     background-color: #000000;
     padding-bottom: 35px;
 
@@ -66,9 +65,11 @@
 
         a {
             display: inline-block;
-        
-            &:hover {
-                opacity: 0.8;
+
+            @media(min-width: 992px) {
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
 
@@ -88,6 +89,14 @@
         .MobileHeaderIntroContainer {
             display: flex;
             flex-direction: column;
+
+            @media (min-width: 321px) and (max-width: 991px) {
+                margin: 0px 20px 0px 20px;
+            }
+        }
+
+        .MobileHeaderLocationContainer {
+            margin-bottom: 10px;
         }
 
         .MobileHeaderIntroContainer, .MobileHeaderLocationContainer, .MobileHeaderIconStrip {
@@ -174,18 +183,19 @@
                 font-size: 20px;
             }
         }
-    
+
         img {
             width: 35px;
             height: 35px;
 
-            &:hover {
-                opacity: 0.8;
-            }
-
             @media(min-width: 992px) {
                 width: 40px;
                 height: 40px;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
     }
