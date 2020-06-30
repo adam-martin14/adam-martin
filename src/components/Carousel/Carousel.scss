@@ -49,6 +49,41 @@
                 }
             }
         }
+
+        .previousArrow, .nextArrow {
+            width: 30px;
+            height: 30px;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+
+            @media(min-width: 992px) {
+                width: 40px;
+                height: 40px;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .previousArrow {
+            left: -35px;
+
+            @media(min-width: 992px) {
+                left: -30px;
+            }
+
+        }
+
+        .nextArrow {
+            right: -35px;
+
+            @media(min-width: 992px) {
+                right: -30px;
+            }
+        }
     }
 }
 

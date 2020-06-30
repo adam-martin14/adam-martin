@@ -50,5 +50,38 @@
     padding: 0 20px;
   }
 }
+.CarouselContainer .CarouselContentContainer .previousArrow, .CarouselContainer .CarouselContentContainer .nextArrow {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+}
+@media (min-width: 992px) {
+  .CarouselContainer .CarouselContentContainer .previousArrow, .CarouselContainer .CarouselContentContainer .nextArrow {
+    width: 40px;
+    height: 40px;
+  }
+  .CarouselContainer .CarouselContentContainer .previousArrow:hover, .CarouselContainer .CarouselContentContainer .nextArrow:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+.CarouselContainer .CarouselContentContainer .previousArrow {
+  left: -35px;
+}
+@media (min-width: 992px) {
+  .CarouselContainer .CarouselContentContainer .previousArrow {
+    left: -30px;
+  }
+}
+.CarouselContainer .CarouselContentContainer .nextArrow {
+  right: -35px;
+}
+@media (min-width: 992px) {
+  .CarouselContainer .CarouselContentContainer .nextArrow {
+    right: -30px;
+  }
+}
 
 /*# sourceMappingURL=Carousel.css.map */
