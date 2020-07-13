@@ -4,7 +4,7 @@ import myLogo from '../../assets/images/logo.png';
 
 const logo = (props) => (
     <div className={classes.logo}>
-        <a href = "/">
+        <a href={props.link}>
             <img src={myLogo} alt="MyLogo" />            
         </a>
     </div>

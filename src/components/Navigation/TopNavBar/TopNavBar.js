@@ -27,7 +27,7 @@ class TopNavBar extends Component {
 
                 <header className={classes.TopNavBar}>
 
-                    <Logo />
+                    <Logo link="/adam-martin" />
 
                     <nav className={classes.DesktopOnlyNavItems}>
                         <NavigationItems />
