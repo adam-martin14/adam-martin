@@ -99,7 +99,7 @@ export default class PortfolioCarousel extends Component {
                             <a href="https://codepen.io/a-martin/pen/rNNrMEe" target="_blank" rel="noopener noreferrer">
                                 <img src={accordion} alt="project-screenshot"></img>
                             </a>                
-                            <p>Accordions are great for displaying categorised information on a web page. This simple component, built with HTML, CSS and JavaScript, shows and hides information in a fluid, user-friendly way.</p>
+                            <p>Accordions are great for displaying categorized information on a web page. This simple component, built with HTML, CSS and JavaScript, shows and hides information in a fluid, user-friendly way.</p>
                         </div>
                     </div>
 
