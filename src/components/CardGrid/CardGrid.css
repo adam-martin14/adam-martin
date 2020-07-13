@@ -25,11 +25,12 @@
 }
 .CardGridContainer .CardGridContentContainer .Card {
   background-color: #FFFFFF;
-  padding: 20px 30px;
+  padding: 18px;
   margin-bottom: 30px;
 }
 @media (min-width: 992px) {
   .CardGridContainer .CardGridContentContainer .Card {
+    padding: 20px 30px;
     margin-bottom: 0;
     margin-right: 30px;
   }
@@ -42,6 +43,7 @@
 }
 .CardGridContainer .CardGridContentContainer .Card h2 {
   text-align: center;
+  margin-top: 10px;
 }
 .CardGridContainer .CardGridContentContainer .Card p {
   line-height: 25px;

@@ -20,7 +20,7 @@ class App extends Component {
         <MainHeader />
 
         <TextWithImage 
-          text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+          text={"I am an experienced Web Developer committed to adopting cutting-edge technologies and industry-standard workflow tools. I am especially enthusiastic about front-end development, and have applied this in fast-paced digital media agencies, where I have worked on multiple projects for various clients. When I'm not coding, I participate in sports, including soccer and running. I also enjoy traveling to new places, which I pursued while working/ volunteering as an English teacher for 2 years in East Asia and South America."}
         />
 
         <CardGrid />

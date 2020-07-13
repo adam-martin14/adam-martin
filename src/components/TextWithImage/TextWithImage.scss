@@ -25,11 +25,16 @@
             margin: 0 auto;
 
             @media(min-width: 992px) {
-                width: 80%;
+                width: 85%;
             }
 
             p {
                 line-height: 30px;
+
+                @media(min-width: 992px) {
+                    text-align: justify;
+                    font-size: 18px;
+                }
             }
         }
     

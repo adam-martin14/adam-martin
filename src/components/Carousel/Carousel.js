@@ -8,7 +8,7 @@ import hillgate from '../../assets/images/hillgate.png';
 import reactUnitConverter from '../../assets/images/react-unit-converter.png';
 import unitConverter from '../../assets/images/unit-converter.png';
 import toDoList from '../../assets/images/to-do-list.png';
-import accordian from '../../assets/images/accordian.png';
+import accordion from '../../assets/images/accordion.png';
 import blogIndex from '../../assets/images/blog-index.png';
 
 
@@ -58,7 +58,7 @@ export default class PortfolioCarousel extends Component {
         <div id="work" className={classes.CarouselContainer}>
 
             <div className={classes.CarouselContentContainer}>
-
+                
                 <PrimarySectionHeading primaryHeadingText="Recent Projects" />
 
                 <Slider {...settings}>
@@ -69,7 +69,7 @@ export default class PortfolioCarousel extends Component {
                             <a href="https://www.hillgatepr.co.uk/" target="_blank" rel="noopener noreferrer">
                                 <img src={hillgate} alt="project-screenshot"></img>
                             </a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Shortly after starting my most recent role, the company urgently required a Wordpress developer for a recently-acquired project with a London media agency - and I was on-hand to help! Working alongside another developer, I built various responsive components, including a header, footer, navigation, carousel, image grid, text block, Google Map, and more. With time scarce, I ensured that, where possible, components were reusable. User-friendly client content population capabilities were implemented using the 'Advanced Custom Fields' plugin.</p>
                         </div>
                     </div>
 
@@ -79,17 +79,7 @@ export default class PortfolioCarousel extends Component {
                             <a href="https://adam-martin14.github.io/react-unit-converter/" target="_blank" rel="noopener noreferrer">
                                 <img src={reactUnitConverter} alt="project-screenshot"></img>
                             </a>                
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div className={classes.CarouselSlideContentContainer}>
-                            <h2>JavaScript To-Do List</h2>
-                            <a href="https://codepen.io/a-martin/pen/WBRPNa" target="_blank" rel="noopener noreferrer">
-                                <img src={toDoList} alt="project-screenshot"></img>
-                            </a>                 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>My first React project posed 2 significant challenges: how to efficiently structure/ split the app into components, and how to allow for user-friendly conversion from/ to multiple unit values. After navigating these challenges, I was happy with the result, which allows users to quickly convert a wide range of temperature, weight, length and speed units.</p>
                         </div>
                     </div>
 
@@ -99,17 +89,27 @@ export default class PortfolioCarousel extends Component {
                             <a href="https://codepen.io/a-martin/pen/NWqRdWX" target="_blank" rel="noopener noreferrer">
                                 <img src={blogIndex} alt="project-screenshot"></img>
                             </a>                
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>When browsing blogs, users need to be able to locate desired content quickly. This HTML, CSS and JavaScript blog index page addresses this need, featuring simple post category filters and a useful 'Load More' button. Responsive design was achieved using the Bootstrap grid system.</p>
                         </div>
                     </div>
 
                     <div>
                         <div className={classes.CarouselSlideContentContainer}>
-                            <h2>JavaScript Accordian</h2>
+                            <h2>JavaScript Accordion</h2>
                             <a href="https://codepen.io/a-martin/pen/rNNrMEe" target="_blank" rel="noopener noreferrer">
-                                <img src={accordian} alt="project-screenshot"></img>
+                                <img src={accordion} alt="project-screenshot"></img>
                             </a>                
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Accordions are great for displaying categorised information on a web page. This simple component, built with HTML, CSS and JavaScript, shows and hides information in a fluid, user-friendly way.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className={classes.CarouselSlideContentContainer}>
+                            <h2>JavaScript To-Do List</h2>
+                            <a href="https://codepen.io/a-martin/pen/WBRPNa" target="_blank" rel="noopener noreferrer">
+                                <img src={toDoList} alt="project-screenshot"></img>
+                            </a>                 
+                            <p>No JavaScript portfolio is complete without a 'To Do List' app! Built using HTML, CSS and JavaScript, this simple, responsively-designed app allows users to add and delete list items on an attractive user interface.</p>
                         </div>
                     </div>
 
@@ -119,7 +119,7 @@ export default class PortfolioCarousel extends Component {
                             <a href="https://codepen.io/a-martin/pen/WBppQj" target="_blank" rel="noopener noreferrer">
                                 <img src={unitConverter} alt="project-screenshot"></img>
                             </a>                
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Built with HTML, CSS and JavaScript, this simple, effective tool converts temperature, distance and weight values. Conversions are calculated and updated in real-time, so there's no need to click a button or refresh the page.</p>
                         </div>
                     </div>
 

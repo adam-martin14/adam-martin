@@ -15,16 +15,16 @@ const contactBlock = (props) => (
         <div className={classes.ContactBlockContentContainer}>
 
             <div className={classes.IconAndText}>
-                <a href="mailto:example@example.com">
+                <a href="mailto:adamjmartin14@hotmail.com">
                     <img src={mailIcon} alt="mail"></img>
-                    <p>example@example.com</p>
+                    <p>Drop me an email</p>
                 </a>
             </div>
 
             <div className={classes.IconAndText}>
                 <a href="https://www.linkedin.com/in/adam-martin14/" target="_blank" rel="noopener noreferrer">
                     <img className={classes.LinkedinIcon} src={linkedinLogo} alt="linkedin-logo"></img>
-                    <p>Message me on LinkedIn</p>
+                    <p>Reach out on LinkedIn</p>
                 </a>
             </div>
 

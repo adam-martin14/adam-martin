@@ -43,7 +43,7 @@ const mainHeader = (props) => (
             <div className={classes.DesktopHeaderIntroLocationIconsContainer}>
 
                 <div className={classes.DesktopHeaderIntroContainer}>
-                    <h1>Hi, I'm Adam</h1>
+                    <h1>Hi, I'm Adam.</h1>
                     <h2>I'm a Web Developer based in California.</h2>
                 </div>
 
@@ -51,7 +51,7 @@ const mainHeader = (props) => (
 
                     <div className={classes.DesktopHeaderLocationContainer}>
                         <img className={classes.LocationPinImage} src={locationPin} alt="location-pin"></img>
-                        <h3>Sacramento, CA</h3>
+                        <h3>Sacramento, CA, USA</h3>
                     </div>
                                 
                     {/* MAKE OWN COMPONENT */}

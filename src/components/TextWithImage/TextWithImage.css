@@ -19,11 +19,17 @@
 }
 @media (min-width: 992px) {
   .TextWithImageContainer .TextWithImageContentContainer .TextColumn {
-    width: 80%;
+    width: 85%;
   }
 }
 .TextWithImageContainer .TextWithImageContentContainer .TextColumn p {
   line-height: 30px;
+}
+@media (min-width: 992px) {
+  .TextWithImageContainer .TextWithImageContentContainer .TextColumn p {
+    text-align: justify;
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=TextWithImage.css.map */
