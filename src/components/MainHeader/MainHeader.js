@@ -43,7 +43,7 @@ const mainHeader = (props) => (
             <div className={classes.DesktopHeaderIntroLocationIconsContainer}>
 
                 <div className={classes.DesktopHeaderIntroContainer}>
-                    <h1>Hi, I'm Adam.</h1>
+                    <h1>Hi, I'm Adam</h1>
                     <h2>I'm a Web Developer based in California.</h2>
                 </div>
 
