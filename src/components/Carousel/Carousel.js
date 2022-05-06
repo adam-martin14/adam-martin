@@ -69,7 +69,7 @@ export default class PortfolioCarousel extends Component {
                             <a href="https://www.hillgatepr.co.uk/" target="_blank" rel="noopener noreferrer">
                                 <img src={hillgate} alt="project-screenshot"></img>
                             </a>
-                            <p>Shortly after starting my most recent role, the company urgently required a Wordpress developer for a recently-acquired project with a London media agency - and I was on-hand to help! Working alongside another developer, I built various responsive components, including a header, footer, navigation, carousel, image grid, text block, Google Map, and more. With time scarce, I ensured that, where possible, components were reusable. User-friendly client content population capabilities were implemented using the 'Advanced Custom Fields' plugin.</p>
+                            <p>Shortly after starting a previous role, the company urgently required a Wordpress developer for a recently-acquired project with a London media agency - and I was on-hand to help! Working alongside another developer, I built various responsive components, including a header, footer, navigation, carousel, image grid, text block, Google Map, and more. With time scarce, I ensured that, where possible, components were reusable. User-friendly client content population capabilities were implemented using the 'Advanced Custom Fields' plugin.</p>
                         </div>
                     </div>
 

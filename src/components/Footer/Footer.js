@@ -8,7 +8,7 @@ const footer = (props) => (
 
         <div className={classes.FooterContentContainer}>
 
-            <p>Adam Martin, 2020</p>
+            <p>Adam Martin, {new Date().getFullYear()}</p>
 
         </div>
     </div>
